@@ -1,15 +1,12 @@
 var Const = require('../const/consts');
-var Ajax = require('');
-var newsAjax = new Ajax({
-    url: Const.path,
-    method: 'GET',
-    dataType: 'json'
-});
+var jQuery = require('jquery');
 
-newsAjax.on('success', function (event, data) {
-    return data;
-});
 
 module.exports = function () {
-    return newsAjax.send();
+    return jQuery.ajax({
+        url: Const.path,
+        async: false,
+        method: 'GET',
+        dataType: 'json'
+    }).responseJSON;
 }

@@ -9,7 +9,7 @@ module.exports = React.createClass({
                     <div></div>
                     <div></div>
                 </i>
-                <h2 className="titleNav">Titulo de la noticia</h2>
+                <h2 className="titleNav"></h2>
             </nav>
         </header>);
     }

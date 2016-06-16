@@ -6,15 +6,24 @@ var News = require('./components/News');
 var StoreNews = require('./stores/News');
 
 var App = React.createClass({
+    getInitialState: function () {
+        return {
+            news: []
+        };
+    },
+
     componentDidMount: function () {
-        console.log(StoreNews());
+        var news = StoreNews();
+        this.setState({
+            news: news ? news : []
+        });
     },
 
     render: function() {
         return (
             <div>
                 <Menu key="menu" />
-                <News key="news"/>
+                <News key="news" news={this.state.news} />
             </div>
         );
     }
