@@ -65,6 +65,9 @@ header {
     min-height: 100px;
     margin-top: 15px;
     width: 100%;
+    transform: translate(-50%,0);
+    opacity: 0;
+    visibility: hidden;
 
     display: -webkit-box;
     display: -moz-box;
@@ -78,10 +81,18 @@ header {
     align-items: center;
 }
 
+.notice-active {
+    visibility: visible;
+    transform: translate(0,0);
+    opacity: 1;
+}
+
 .notice strong{
-    font-size: 32px;
+    font-size: 20px;
+    font-weight: bold;
     color: #B4B4B4;
     margin-left: 1em;
+    cursor: pointer;
 }
 
 .circle {
@@ -96,9 +107,11 @@ header {
 
 .noticeDetails {
     margin-top: 8px;
-    min-height: 300px;
+    height: 0px;
     background-color: #fafef0;
     padding: 0px;
+    visibility: hidden;
+    opacity: 0;
 
     display: -webkit-box;
     display: -moz-box;
@@ -115,7 +128,7 @@ header {
 .noticeDetails img {
     padding: 0;
     margin: 0;
-    height: 300px;
+    height: 0px;
     width: 300px;
 }
 
@@ -125,4 +138,27 @@ header {
     color: #B4B4B4;
     font-size: 26px;
     width: 65%;
+    opacity: 0;
+}
+
+.transform {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.noticeDetails-active {
+    visibility: visible;
+    height: 300px;
+    opacity: 1;
+}
+
+.noticeDetails-active img{
+    height: 300px;
+}
+
+.noticeDetails-active p{
+    opacity: 1;
 }
