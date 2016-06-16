@@ -1,0 +1,16 @@
+{
+  "name": "rappi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "miguelcast",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
