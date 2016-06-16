@@ -1,3 +1,4 @@
+"use strict";
 var Const = require('../const/consts');
 var jQuery = require('jquery');
 
