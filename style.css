@@ -241,3 +241,35 @@ header {
         width: 98%;
     }
 }
+
+@media (max-width: 600px) {
+    .noticeDetails p{
+        font-size: 14px;
+        width: 60%;
+        margin: 8px;
+    }
+
+    .noticeDetails img{
+        width: 150px;
+    }
+
+    .noticeDetails-active img{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 420px) {
+    .noticeDetails p{
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .noticeDetails img{
+        display: none;
+    }
+
+    .noticeDetails-active img{
+        display: none;
+    }
+}
