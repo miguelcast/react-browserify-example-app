@@ -23,3 +23,5 @@ y cambiamos la propiedad **path**.
 Luego ejecutamos el siguiente comando para compilar el código Javascript:
 
 `browserify -t [ babelify --presets [ react ] ] src/index.js -o build/bundle.js`
+
+Ejecutar el archivo **rappi.html**
