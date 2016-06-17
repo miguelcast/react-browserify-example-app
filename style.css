@@ -163,6 +163,16 @@ header {
     opacity: 1;
 }
 
+.alert {
+    color: #fafef0;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/** Media querys */
+
 @media (max-width: 1235px) {
     .noticeDetails p{
         margin: 35px;

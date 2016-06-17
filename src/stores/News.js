@@ -1,7 +1,7 @@
 "use strict";
-var Const = require('../const/consts');
-var jQuery = require('jquery');
 
+var jQuery = require('jquery');
+var Const  = require('../const/consts');
 
 module.exports = function () {
     return jQuery.ajax({

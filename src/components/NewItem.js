@@ -1,5 +1,7 @@
 "use strict";
-var React = require('react');
+
+var React   = require('react');
+var Animate = require('../animate');
 
 module.exports = React.createClass({
     getInitialState: function() {
@@ -10,18 +12,12 @@ module.exports = React.createClass({
 
     componentDidMount: function () {
         setTimeout(function () {
-            var details = document.getElementById('n' + this.props.new.id);
-            details.className = 'notice transform notice-active';
+            Animate.showNews('n' + this.props.new.id);
         }.bind(this), (100 * this.props.new.id));
     },
 
     toggleDetails : function() {
-        var details = document.getElementById(this.props.new.id);
-        if(details.className.indexOf('noticeDetails-active') === -1){
-            details.className = 'noticeDetails transform noticeDetails-active';
-        }else{
-            details.className = 'noticeDetails transform';
-        }
+        Animate.toggleDetails(this.props.new.id);
     },
 
     render : function() {

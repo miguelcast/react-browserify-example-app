@@ -5,7 +5,7 @@ module.exports = React.createClass({
     render : function() {
         return (<header>
             <nav className="content">
-                <i className="iMenu">
+                <i className="iMenu" onClick={this.props.toggleNewsHandle.bind(null, this.props.menu)} >
                     <div></div>
                     <div></div>
                 </i>
