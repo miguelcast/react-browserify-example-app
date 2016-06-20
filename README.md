@@ -25,3 +25,5 @@ Luego ejecutamos el siguiente comando para compilar el código Javascript:
 `browserify -t [ babelify --presets [ react ] ] src/index.js -o build/bundle.js`
 
 Ejecutar el archivo **rappi.html**
+
+![alt tag](https://raw.githubusercontent.com/miguelcast/react-browserify-example-app/master/20160620-112355_capture.gif)
